@@ -1,7 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.woff2"),
+    url("../fonts/Lato-Regular.woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Bold.woff2"),
+    url("../fonts/Lato-Bold.woff");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Black.woff2"),
+    url("../fonts/Lato-Black.woff");
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+}
 
 :root {
     --accent-color: #f10e34;
+    --dark-color: #222222;
+    --light: #ffffff;
+    --bg-color: #f3f3f3;
 }
 
 * {
@@ -14,7 +40,7 @@ a {
 }
 
 img {
-    /* min-width: 100%; */
+    min-width: 100%;
 }
 
 button {
@@ -39,16 +65,38 @@ body {
     margin: 0;
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    background-color: #f3f3f3;
+    background-color: var(--bg-color);
 }
 
 .container {
-    max-width: 1420px;
-    padding: 0 15px;
+    max-width: 1170px;
+    padding: 0 0px;
     margin: 0 auto;
+    border: 1px solid green;
 }
 
-.header__form__btn{
+.header {
+    height: 115px;
+    background-color: var(--dark-color);
+}
+
+.header-logo {
+    display: inline-block;
+    padding-bottom: 50px;
+
+}
+.header__right {
+    display: inline-block;
+}
+
+.header-nav__list {
+    display: flex;
+}
+
+.header-nav__link {
+    color: var(--light);
+}
+/* .header__form__btn{
     background-image: url("../img/Header/searchBtn.png");
     background-position: center center;
     background-repeat: no-repeat;
@@ -59,4 +107,4 @@ body {
 }
 .header__right__nav__item:not(:last-child) {
     margin-right: 20px;
-}
+} */
