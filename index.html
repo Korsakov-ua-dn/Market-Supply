@@ -9,33 +9,35 @@
 </head>
 <body>
     <div class="header">
-        <div class="container">
+        <div class="container header-container">
             <div class="header-logo">
                 <img src="img/Logo.png" alt="Logo">
             </div>
             <div class="header__right">
-                <div class="nav header-nav">
+                <nav class="nav header-nav">
                     <ul class="header-nav__list list-reset">
-                        <li class="header-nav__item"><a href="#" class="header-nav__link">My Account</a></li>
-                        <li class="header-nav__item"><a href="#" class="header-nav__link">Whishlist</a></li>
-                        <li class="header-nav__item"><a href="#" class="header-nav__link">My Cart</a></li>
-                        <li class="header-nav__item"><a href="#" class="header-nav__link">Checkout</a></li>
+                        <li class="header-nav__item"><a href="#" class="header-nav__link">My Account</a></li><hr class="header-hr">
+                        <li class="header-nav__item"><a href="#" class="header-nav__link">Whishlist</a></li><hr class="header-hr">
+                        <li class="header-nav__item"><a href="#" class="header-nav__link">My Cart</a></li><hr class="header-hr">
+                        <li class="header-nav__item"><a href="#" class="header-nav__link">Checkout</a></li><hr class="header-hr">
                         <li class="header-nav__item"><a href="#" class="header-nav__link">Login</a></li>
                     </ul>
-                </div> 
-                <div class="wrapper-form">
+                </nav> 
+                <div class="header-search">
                     <form action="#" class="header-form">
                         <input class="header-form__input" type="text" placeholder="Search here...">
-                        <button class="header-form__btn btn-reset">
+                        <button class="header-form__btn">
                             <!-- <img src="img/Header/searchBtn.png" alt="click"> -->
                         </button>
                     </form>
                     <div class="header-cart">
                         <button class="header-cart__btn">
-                            <img src="img/Header/cart.png" alt="cart">
+                            <!-- <img src="img/Header/cart.png" alt="cart"> -->
                         </button>
-                        <p class="header-cart__title">total</p>
-                        <p class="header-cart__subtotal">$600.00</p>
+                        <div class="header-cart__info">
+                            <p class="header-cart__title">&nbsp;total</p>
+                            <p class="header-cart__subtotal">$600.00</p>
+                        </div>
                     </div>
                 </div>
             </div>
