@@ -239,3 +239,57 @@ body {
 .nav__item:not(:last-child) {
     margin-right: 44px;
 }
+
+/* ---MAIN--- */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    padding: 17px 25px;
+    font-size: 15px;
+    background-color: var(--light);
+}
+
+.menu__item::before {
+    content: url("../img/Main/li-before.png");
+    margin-right: 19px;
+}
+
+.menu__item:not(:last-child) {
+    margin-bottom: 16px;
+}
+/* .menu__item:not(:first-child) {
+    margin-top: 19px;
+} */
+.menu__line {
+    margin-bottom: 16px;
+}
+
+.banner {
+    background-image: url("../img/Main/main-bg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.banner__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 15px;
+    color: var(--light);
+    background-color: var(--accent-color);
+}
+
+.banner__footer .post {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner__footer .post .title {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
